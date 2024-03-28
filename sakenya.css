@@ -1,6 +1,6 @@
 .register {
   margin: auto;
-  background: url("murp.jpeg");
+  background-image: url("murp.jpeg");
   max-width: 350px;
   padding: 10px;
   border-radius: 4px;
