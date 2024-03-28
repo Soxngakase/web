@@ -31,9 +31,18 @@ body {
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 ::placeholder {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+p{
   color: white;
 }
 
