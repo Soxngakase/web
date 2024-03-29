@@ -1,11 +1,11 @@
 <?php 
-$con=new mysqli("192.168.254.109","root","root","newdb");
-$name=$_POST['name'];
-$gender=$_POST['gender'];
-$password=$_POST['password'];
-$confirmpass=$_POST['confirmpass'];
+$con=new mysqli("localhost","sox","sox","sox");
+
 $username=$_POST['username'];
-$sql="INSERT INTO namegender(name,gender,password, confirmpass, username) VALUES('$name','$gender', '$password', '$confirmpass', '$username')";
+$password=$_POST['password'];
+$gender=$_POST['gender'];
+
+$sql="INSERT INTO users(usermame, password, gender, email) VALUES('$username','$gender', '$password', '$email')";
 $result=mysqli_query($con,$sql);
 if($result=="true"){
  echo "<center><h2>Submitted successfully..</h2></center>";
